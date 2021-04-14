@@ -1,0 +1,12 @@
+	 #content .sub2 {width: 240px; height: 100px; background-color: #21c179; margin-top: -7px;}
+	 #content .sub2 h2 {text-align: center; line-height: 100px; color: #fff;}
+	 #content .nav {width: 240px; height: 50px; line-height: 50px;}
+	 #content .nav .navi {width: 240px;}
+	 #content .nav .group {display: block; position: relative;}
+	 #content .nav .group > a {display: block; border-bottom: 1px solid #ccc; text-indent: 10px; font-size: 15px; font-weight: bold; }
+	 #content .nav .group a:hover, #content .nav .group a:focus {background-color: #28a76e; color: #fff;}
+	 #content .nav .group .plus {position: absolute; right: 10px; top: 2px;}
+	 #content .nav .active {background-color: #28a76e; color: #fff;}
+	 #content .nav .group .sub {display: none;}
+	 #content .nav .group .sub li a {display: block; background-color: #eee; text-indent: 20px; font-size:14px; height: 35px; line-height: 35px; border-bottom: 1px solid #ccc;}
+	 #content .nav .group .sub li a:hover, #content .nav .group .sub li a:focus {color: #28a76e;}

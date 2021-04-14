@@ -1,0 +1,16 @@
+	 #content {width: 1200px; height: 800px; margin: 0 auto; position: relative;}
+	 #content .con {position: absolute; left: 290px; top: 0;}
+	 #content .con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
+	 #content .con .login1 {width: 910px; height: 220px; margin-top: 20px;  position: relative;}
+	 #content .con .login1 img {width: 150px; height: 148px; position: absolute; top: 30px; left: 160px;}
+	 #content .con .login1 p {position: absolute; top: 55px; left: 360px; font-size:30px; font-weight: bold;}
+	 #content .con .login1 span {color: #28a76e;}
+	 #content .con .login2 {width: 910px; height: 220px; background-color: #fff; position: relative;}
+	 #content .con .login2 .logform {position: absolute; top: 20px; left: 250px;}
+	 .ida, .pwa {width: 400px; height: 50px; border:1px solid #ccc; font-size:16px; text-indent: 10px;}
+	 .submit {width: 400px; height: 50px; background-color: #28a76e; color: #fff; position: absolute; top: 130px; border:none; font-size:20px; font-weight: bold;}
+	 .ida {position: absolute;}
+	 .pwa {position: absolute; top: 65px;}
+	 #content .con .login3 {width: 400px; margin-left: 250px;}
+	 #content .con .login3 a {float: left; display: block; width: 120px; height: 40px; line-height: 40px; border:1px solid #28a76e; box-sizing: border-box; margin-right: 20px; color: #000; text-align: center; font-size:15px;}
+	 #content .con .login3 a:last-child {margin-right: 0;}

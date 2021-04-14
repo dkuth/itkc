@@ -1,0 +1,14 @@
+	 #content {width: 1200px; height: 1450px; margin: 0 auto; position: relative;}
+	 #content .con {position: absolute; left: 290px; top: 0;}
+	 #content .con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
+	 #content .con .join {width: 910px; height: 100px; margin-top: 20px; position: relative; border: 1px solid #ccc;}
+	 #content .con .join span {color: #28a76e; font-weight: bold;}
+	 #content .con .join li {display: block; width: 302px; height: 100px; line-height: 100px; float: left; text-align: center; font-size: 20px}
+	 #content .con .text1, #content .con .text2 {width: 910px; margin-top: 35px;}
+	 #content .con .text1 h4, #content .con .text2 h4 {font-weight: normal; margin-bottom: 20px; font-size: 24px} 
+	 #content .con textarea {text-align: justify; width: 850px; border:1px solid #ccc; padding: 30px; color:#000; height:350px; overflow-x:hidden; overflow-y:scroll; resize:none; margin-bottom: 10px; vertical-align:top; font-size:15px}
+	 #content .con label {display: inline-block;margin-left: 5px;}
+	 #content .con .agr2 {margin-bottom: 20px;}
+	 #content .con .agrBtn {width: 455px;margin:0 auto;padding-bottom:50px}
+	 #content .con .agrBtn input:first-child {width:150px;margin:5px;height: 50px; border:1px solid #28a76e; background-color: #28a76e; color:#fff; font-weight:bold; font-size:16px; cursor:pointer}
+	 #content .con .agrBtn input:last-child {width:220px;margin:5px;height: 50px; border:1px solid #28a76e; background-color: #fff; color: #333; font-weight:bold;font-size:16px; cursor:pointer}
