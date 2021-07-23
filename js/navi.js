@@ -7,15 +7,15 @@
 	});
 
 	 $(document).ready(function(){
-		$('.navi > li > a').click(function(){
-			$('.navi > li > a').removeClass("active");
+		$('.nav_info > li > a').click(function(){
+			$('.nav_info > li > a').removeClass("active");
 			$(this).addClass("active");
 		});
 	 });
 
 	/* 
 	$('.group').click(function(){
-		$('.navi li .sub').slideUp();
+		$('.nav_info li .sub').slideUp();
 		$(this).children('.sub').stop().slideToggle();
 	});
 	*/
