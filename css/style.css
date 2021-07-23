@@ -232,6 +232,7 @@
 	.dbsearch {
 		float: left;
 		width: 150px;
+		height: 28px;
 		line-height: 28px;
 		border: 1px solid #ccc;
 		text-indent: 10px;
@@ -438,16 +439,12 @@
 	}
 	.ct {
 		position:absolute;
+		width: 390px;
 		top:50px;
 		left:150px;
 		color:#333;
 		font-size:14px;
 		overflow: hidden;
-    text-overflow: ellipsis;
-		word-wrap: break-word;
-		display: -webkit-box;
-		-webkit-line-clamp: 3;
-		-webkit-box-orient: vertical;
 		padding-right: 10px;
 	}
 	.tablist .more {
