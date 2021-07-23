@@ -1,195 +1,186 @@
 	/* reset */
-	* {margin: 0; padding: 0; box-sizing: border-box;}
+	html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
+	.hide, caption, legend {overflow: hidden;display:block;position:absolute;border:0;width: 1px;height: 1px;clip:rect(1px, 1px, 1px, 1px);}
 	li {list-style: none;}
 	a {text-decoration: none; color: #333;}
 	body {width: 100%; min-width: 1200px;font-family:'Noto Sans Kr';}
-	legend, label {display: none;}
+	label {display: none;}
 	fieldset {border: none;}
-	input, button, textarea, select {outline: none !important;}
-
+	button { border: 0;}
+	input, button, textarea, select { outline: none !important;}
+	.clear {clear:both;}
+	.clear:after { content:""; display:block; clear:both;}
 	
 	/* Skip */
-	.skip a {position:absolute;left:0;top:-9999em;z-index:9999;display:block;width:100%;background-color:#87b0dd;color:#fff; text-align: center;font-family:'Noto Sans Kr';}
-	.skip a:focus {top:0;}
+	.skip { position: absolute; left: 0; top: -100%; z-index: 2; width: 100%; height: 50px; font-size: 15px; color: #fff; text-align: center; line-height: 50px; transition: all .5s; background-color: #000;  }
+	.skip:focus { top: 0;}
+
+	/* gototop */
 	.gototop {position:fixed; right:20px; bottom:20px; border:1px solid #fff; display:block; width:40px; height:40px; border-radius:50%; text-align: center; line-height: 50px; background-color: #87b0dd; transform: translateY(30px); opacity: 0; transition: 0.5s; z-index: 9999;}
   .gototop.active {opacity: 1; transform: translateY(0);}
 	
+	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #fff;
+	}
+
 	/* header */
-	#header {
-		width: 100%;
+	header {
 		margin: 0 auto;
-		height: 200px;
 		position: relative;
 	}
 	.header-inner {
-		width: 100%;
-		height: 40px;
 		margin: 0 auto;
 		background-color: #28a76e;
 	}
 	.header-info {
 		width: 1200px;
 		margin: 0 auto;
-		height: 40px;
-		padding-top: 8px;
+	}
+	.lnb,
+	.lnb2 {
+		padding: 8px 0;
 	}
 	.lnb {
 		float: left;
 	}
-	.lnb li {
+	.lnb li,
+	.lnb2 li {
 		float: left;
-		margin-left: 15px;
+		position: relative;
+	}
+	.lnb li a,
+	.lnb2 li a {
+		padding: 0 7.5px;
+		color: #fff;
+		font-weight: bold;
+	}
+	.lnb li ~ li a:before,
+	.lnb2 li ~ li a:before {
+		content:"";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 1px;
+		height: 10px;
+		background: #fff;
+		transform: translateY(-50%);
 	}
   .lnb2 {
 		float: right;
 	}
-	.lnb2 li {
-		float: left;
-		margin-right: 15px;
-		position: relative;
-	}
-	.header-info li a {
-		color: #fff;
-		font-weight: bold;
-	}
-	.lnb2 li > a:after {
-		content: "";
-		display: block;
-		width: 1px;
-		height: 12px;
-		line-height: 12px;
-		background-color: #fff;
-		position: absolute;
-		top: 7px;
-		right: -7.5px
-	}
-	.lnb2 > li:last-child a:after {
-		display: none;
-	}
-	.header-inner2 {
-		width: 100%;
-		height: 100px;
-		border-bottom: 1px solid #ccc;
-	}
+	
 	.header-main {
 		width: 1200px;
 		margin: 0 auto;
 		position: relative;
 	}
 	.logo {
-		position: absolute;
-		left: 20px;
-		top: 15px;
-	}
-	.logo img {
-		width: 300px;
-		height: 60px;
+		float: left;
+		line-height: 1;
+		font-size: 0;
+		padding: 20px 0 20px 20px;
 	}
 	.search_box {
-		width: 380px;
-		position: absolute;
-		top: 33px;
-		right: 47px;
+		float: right;
+		padding: 30px 0;
 	}
 	.search {
 		width: 300px;
-		height: 38px;
+		line-height: 38px;
 		border: 1px solid #0059ab;
 		text-indent: 10px;
 		color: #333;
 		font-weight: bold;
 	}
-	.button {
-		position: absolute;
-		right: 30px;
-		width: 50px;
-		height: 38px;
+	.search_box button {
+		float: right;
+		width: 40px;
+		height: 40px;
 		background-color: #0059ab;
-		font-weight: bold;
-		font-size:16px;
-		color: #fff;
-		border:none;
 		cursor: pointer;
 	}
+	.search_box .xi-search {
+		color: #fff;
+		font-size: 24px;
+	}
 	.header-inner3 {
-		width: 100%;
-		height: 50px;
-		border-bottom: 1px solid #ccc;
-	}
-	.menu {
-		width: 1200px;
-		height: 50px;
-		margin: 0 auto;
-	}
-	.gnb {
-		width: 1200px;
-		height: 50px;
-		margin: 0 auto;
-	}
-	.g1 > li {
-		float: left;
-		text-align: center;
-		font-size:18px;
-		height: 50px;
-		line-height: 50px;
-		font-weight: bold;
 		position: relative;
-		text-indent: 20px;
+		border-top: 1px solid #ccc;
+		box-sizing: border-box;
 	}
-	.g1 > li > a {
-		display: block;
-		width: 200px;
-		border-bottom: 2px solid transparent;
-		transition: all 0.8s;
-	}
-	.g1 > li > a:after {
+	.header-inner3:after {
 		content: "";
-		display: block;
-		width: 1px;
-		height: 20px;
-		line-height: 20px;
-		background-color: #ddd;
 		position: absolute;
-		right: 0;
-		top: 15px;
-	}
-	.g1 > li:last-child a:after {
-		display: none;
-	}
-	.g1 > li > a:hover {
-		border-bottom-color: #28a76e;
-	}
-	.g1 > li:hover .g2 {
-		background-color: #fefeee;
-	}
-	.g2 {
-		height: 360px;
-		z-index:9999;
-		background-color: beige;
-		display: none;
-		position: absolute;
-		top: 52px;
 		left: 0;
-		transition: all 0.3s;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		height: 2px;
+		background: #ccc;
 	}
-	.g2 li {
+	.header-inner3 > div {
+		width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.header-inner3 .gnb > li {
+		float: left;
+		position: relative;
 		width: 200px;
-		text-align: left;
-		font-size:15px;
-		font-weight:normal;
-		height: 40px;
+	}
+	.header-inner3 .gnb > li > a {
+		display: block;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 50px;
+		text-align: center;
+	}
+	.done {
+		color: orange;
+	}
+	.header-inner3 .gnb > li:hover > div {
+		background: rgb(235, 228, 228);
+		z-index: 99;
+	}
+	.header-inner3 .gnb > li > div {
+		display: none;
+		position: absolute;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		padding: 16px 20px;
+		box-sizing: border-box;
+		border-left: 1px solid #d7d7d7;
+	}
+	.header-inner3 .gnb > li:last-child > div {
+		border-right: 1px solid #d7d7d7;
+	}
+	.header-inner3 .gnb > li > div > div > ul a {
+		display: block;
+	}
+	.header-inner3 .gnb > li > div > div > ul > li {
 		line-height: 40px;
 	}
-	.g2 li a {
-		display: block;
-		width: 200px;
-		transition: all 0.3s;
+	.header-inner3 .gnb > li > div > div > ul > li > a {
+		font-size: 16px;
 	}
-	.g2 li a:hover {
-		color: #28a76e;
+	.bg_gnb {
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50px;
+		z-index: 95;
+		background: beige;
+		border-top: 1px solid #d7d7d7;
 	}
-	.g2 .done {
-		color: orange;
+	.bg_gnb:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-top: 1px solid #d7d7d7;
 	}
 
 	/* visual */
@@ -198,80 +189,79 @@
 		margin: 0 auto;
 		position: relative;
 	}
-	.visual-inner {
+	#visual .left {
+		float: left;
 		width:900px;
 	}
-	.visual-inner .bx-wrapper {
+	#visual .left .bx-wrapper {
 		margin-bottom: 0;
 	}
-	.visual-inner img {
+	#visual .left .bx-wrapper .bx-controls-auto {
+		bottom: 0;
+		z-index: 90;
+	}
+	#visual .left img {
 		width: 100%;
 	}
-	.visual-inner .bx-wrapper .bx-pager {
+	#visual .left .bx-wrapper .bx-pager {
 		position: absolute;
-		top: 0px;
+		top: 10px;
 		left: 0px;
+		padding-top: 0;
 		width: 100%;
 	}
-	.visual-inner2 {
-		position: absolute;
-		left: 910px;
-		top: 0;
-		width: 290px;
-		height: 256px;
-		background: url(../images/back.jpg) no-repeat center center;
+	#visual .right {
+		float: right;
+		padding: 0 0 3px;
+		width: 300px;
+		background: url(../images/back.jpg) no-repeat center;
 		background-size: 100% 100%;
 	}
-	.visual-inner2 h2 {
-		padding: 20px 0 10px 0;
+	#visual .right h2 {
+		line-height: 1;
+		padding: 25px 0 15px;
 		text-align: center;
 		color: #333;
 	}
 	.dbsearch_box {
 		width: 200px;
-		height: 40px;
-		margin: auto;
-		position: relative;
-		margin-bottom: 5px;
+		margin: 0 auto;
+		padding: 10px 0 10px 0;
 	}
 	.dbsearch {
-		position: absolute;
-		left: 0;
-		top: 0;
+		float: left;
 		width: 150px;
-		height: 30px;
+		line-height: 28px;
 		border: 1px solid #ccc;
 		text-indent: 10px;
 	}
-	.dbbutton {
-		position: absolute;
-		left: 150px;
-		top: 0;
-		width: 39px;
+	.dbsearch_box button {
+		float: left;
+		width: 30px;
 		height: 30px;
-		border: 1px solid #ccc;
+		background: #eee;
 		color: #333;
 		cursor: pointer;
 	}
+	.dbsearch_box .xi-search {
+		color: #000;
+		font-size: 20px;
+	}
 	.db {
-		width: 290px;
-		height: 141px;
+		padding: 0 5px;
+	}
+	.db a {
+		display: block;
+		float: left;
+		font-weight: bold;
 	}
 	.db a:nth-child(odd) {
-		display: block;
 		width: 120px;
-		float: left;
-		font-weight: bold;
-		margin-left: 8px;
-		margin-bottom: 10px;
+		padding: 0 0 10px 8px;
 	}
 	.db a:nth-child(even) {
-		display: block;
 		width: 150px;
-		float: left;
-		font-weight: bold;
-		margin-left: 6px;
-		margin-bottom: 10px;
+		padding: 0 0 10px 6px;
 	}
 	.db span {
 		font-size:14px;
@@ -285,46 +275,56 @@
 	}
 	
 	/* contents */
-	#contents {width: 100%; margin: 0 auto;}
-	.contents-inner {width: 100%; margin: auto;}
+	#contents {
+		margin: 0 auto;
+	}
+	.block {
+		margin: 0 auto;
+	}
+	.block > div {
+		margin: 0 auto;
+  	width: 1200px;
+	}
 
-	/* con-box */
-	.con-box {
-		width: 100%;
-		margin: auto;
-		height: auto;
+	/* con1 */
+	.con1 {
+		background: #eee;
+	}
+	.con1 > div {
 		position: relative;
 	}
 	.con1 h2 {
 		text-align: center;
 		font-size: 28px;
-		padding-top: 20px;
+		padding: 20px 0;
 		color: #333;
 	}
-	.con1 {
+	.book_info {
+		position: relative;
 		width:1200px;
 		margin: 0 auto;
-		height: 490px;
-		background-color: #eee;
-		position: relative;
-		overflow: hidden;
+		padding-bottom: 20px;
 	}
-	.con1 .bx-viewport {
+	.book_info .bx-viewport {
 		background-color: #eee;
 	}
-	.con1 .bx-wrapper {
+	.book_info .bx-wrapper {
 		border: none;
 		box-shadow: none;
+		margin-bottom: 0;
 	}
-	.con1 .bx-wrapper .bx-pager {
+	.book_info .bx-wrapper .bx-pager,
+	.book_info .bx-wrapper .bx-controls-auto {
 		position: absolute;
-		bottom: 0px;
-		left: 45%;
 		bottom: 0;
-		width: 100%;
 	}
-	.con1-slider {
-		background-color: #eee;
+	.book_info .bx-wrapper .bx-pager {
+		width: 120px !important;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.book_info .bx-wrapper .bx-controls-auto {
+		z-index: 90;
 	}
 	.con1-slider li {
 		width: 240px !important;
@@ -338,11 +338,11 @@
 	.con1-slider li a img {
 		width: 200px;
 		height: 280px;
-		margin: auto;
+		margin: 0 auto;
 	}
 	.con1-slider li p {
 		text-align: center;
-		padding-top: 5px;
+		padding: 5px 0 0;
 	}
 	.con1-slider a:hover p {
 		font-weight: bold;
@@ -350,30 +350,30 @@
 	.con1-slider a:hover span {
 		color: #28a76e;
 	}
-	.more {
+	.con1 .more {
 		display: block;
 		position: absolute;
 		right: 110px;
 		top: 25px;
 		font-size:16px
 	}
-	.more:hover {
+	.con1 .more:hover {
 		color: #28a76e;
 	}
-	/* con-box2 */
-	.con-box2 {
-		width: 1200px;
-		margin: 0 auto;
-		height: 350px;
-	}
+
 	.con2 {
+		background: #fff;
+	}
+	.con2 .left {
 		width: 600px;
 		float: left;
 		margin-bottom: 30px;
 	}
-	.con2 h2,
-	.con3 h2,
-	.con4 h2 {
+	.con2 .right {
+		width: 600px;
+		float: right;
+	} 
+	.con2 h2 {
 		padding: 20px 0 10px 10px;
 		color: #333;
 	}
@@ -385,8 +385,6 @@
 	}
 	.tablist {
 		position:relative;
-		margin:0;
-		padding:0;
 		border-bottom:1px solid #ccc;
 	}
 	.tablist:after{
@@ -398,19 +396,18 @@
 		float: left;
 		margin-bottom:-1px;
 	}
-	.tab .title {
-		position: relative;
+	.tablist .title {
 		border:1px solid #eee;
 		border-bottom-color:#ccc;
 		background-color: #fafafa;
 		color: #666;
 		font-size: 15px;
 		display: inline-block;
-		padding: 6px 25px 6px 25px;
-		letter-spacing: -1px;
+		padding: 6px 25px;
 		cursor: pointer;
 	}
-	.tablist li  ul {
+	.tablist li ul {
+		display: block;
 		width: 100%;
 		position: absolute;
 		top: 35px;
@@ -421,23 +418,18 @@
 		display:block;
 		clear:both;
 	}
-	.tabliist li ul li{
-		position:relative;
+	.tablist > li > ul > li .tab_img  {
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 30px 20px;
+		background: url(../images/a.png) no-repeat center / auto 100%;
 	}
-	.tablist li ul li a {
-		margin:0;
-		border:0 !important;
-		color:#333 !important;
-		font-weight:normal;
-		background-color:transparent;
-		letter-spacing:normal;
+	.tabliist > li > ul > li{
+		position: relative;
 	}
-	.tablist li ul li a img {
-		padding-top: 30px;
-		padding-left: 20px;
-	}
-	.tit {
-		position:absolute;
+	.tablist > li > ul > li .tit {
+		position: absolute;
 		top:20px;
 		left:150px;
 		color:#28a76e;
@@ -449,38 +441,43 @@
 		left:150px;
 		color:#333;
 		font-size:14px;
+		overflow: hidden;
+    text-overflow: ellipsis;
+		word-wrap: break-word;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		padding-right: 10px;
 	}
-	.more2 {
+	.tablist .more {
 		position:absolute;
 		top:-29px;
 		right:15px;
 		background:transparent;
 		font-size:14px;
 	}
-	.tab li.active a {
+	.tab li.active > a {
 		border:1px solid #28a76e;
-		border-bottom:1px solid #fff;
+		border-bottom: transparent;
 		margin-top:-1px;
 		background:transparent;
 		color:#28a76e;
-	}
-	.tab li.active .title {
-		font-weight:bold;
+		font-weight: bold;
 	}
 	.subs {
 		width: 550px;
-		height: 50px;
+		line-height: 50px;
 		background-color: #28a76e;
 		font-size: 14px;
-		line-height: 50px;
 		position: relative;
 		border: 1px solid #ccc;
 		border-top: 0;
 	}
 	.subs a {
 		display: block;
-		padding-left: 10px;
+		padding: 0 0 0 15px;
 		color: #fff;
+		transition: all 0.3s;
 	}
 	.subs a:hover {
 		background-color: #2d9d6b;
@@ -492,35 +489,40 @@
 		padding-left: 10px;
 	}
 	.subs span {
-		padding-left: 10px;
+		padding-left: 15px;
 	}
-	.con3, .con4 {
+	.app .bx-wrapper .bx-pager {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 100%;
+	}
+	
+	.app, .mov {
 		width: 250px;
 		float: left;
 		margin-left: 49px;
 	}
-	.con3 span {
+	.app span {
 		font-size:18px;
 	}
-	.con3 img, .con4 img {
+	.app img, .mov img {
 		border: 1px solid #ccc;
 	} 
 	
-	/* con-box3 */
-	.con-box3 {
-		width: 100%;
-		margin: 0 auto;
-		height: auto;
+	/* con3 */
+	.con3 {
 		background-color: #28a76e;
 	}
-	.con-box-inner {
+	.con3 > div {
 		width: 1200px;
 		margin: 0 auto;
 		height: 560px;
 	}
-	.con5 {
+	.con3 .left {
 		width: 600px;
 		float: left;
+		padding-top: 20px;
 	}
 	.tab2 {
 		width: 550px;
@@ -528,8 +530,7 @@
 	}
 	.tablist2 {
 		position: relative;
-		list-style: none;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid #ddd;
 		font-size: 12px;
 	}
 	.tablist2:after{
@@ -545,69 +546,62 @@
 		position: relative;
 		float: left;
 		border-bottom-color: #fff;
-		color: #ccc;
+		color: #ddd;
 		font-weight: bold;
 	}
-	.tablist2 > li > a span {
+	.tablist2 > li > a > span {
 		display: inline-block;
-		padding: 6px 25px 6px 25px;
-		letter-spacing: -1px;
+		padding: 6px 25px;
 		cursor: pointer;
 		font-size: 25px;
 	}
-	.tablist2 > li ul {
+	.tablist2 > li > ul {
 		width: 100%;
 		position: absolute;
 		top: 50px;
 		left: 0;
 	}
-	.tablist2 > li ul:after {
+	.tablist2 > li > ul:after {
 		content: "";
 		display: block;
 		clear:both;
 	}
-	.tablist2 > li ul li {
-		position:relative;
-		padding: 15px 0 15px 15px;
-		color:#fff;
-		border-bottom: 1px solid #ccc;
+	.tablist2 > li > ul > li {
+		position : relative;
 	}
-	.tablist2 > li ul li a {
-		border: 0 !important;
-		color: #ddd !important;
+	.tablist2 > li > ul > li > a {
+		display: block;
+		color: #ddd;
 		font-weight: bold;
-		letter-spacing: normal;
 		font-size: 16px;
+		padding: 15px 0 15px 15px;
+		border-bottom: 1px solid #ccc;
 		transition: all 0.3s;
 	}
-	.tablist2 > li ul li a:hover,
-	.tablist2 > li ul li a:active,
-	.tablist2 > li ul li a:focus {
-		color:#fff !important;
+	.tablist2 > li > ul > li > a:hover,
+	.tablist2 > li > ul > li > a:active,
+	.tablist2 > li > ul > li > a:focus {
+		color:#fff;
 	}
 	.time {
-		position:absolute;
-		top:17px;
-		right:10px;
-		color:#ccc;
-		font-size:13px;
+		position: absolute;
+		top: 17px;
+		right: 10px;
+		color: #ddd;
+		font-size: 13px;
 	}
-	.more3 {
+	.tablist2 .more {
 		position:absolute;
 		top:8px;
 		right:10px;
 		border:0 !important;
 	}
-	.tablist2 > li.active a {
+	.tablist2 > li.active > a {
 		border-bottom:1px solid #fff;
 		margin-top:-1px;
 		color:#fff;
 	}
-	.tablist2 > li.active a span {
-		padding-top:7px;
-		font-weight:bold;
-	}
-	.con6 {
+	.box1 {
 		width: 250px;
 		height: 240px;
 		float: left;
@@ -618,7 +612,7 @@
 		height: 110px;
 		background-color: #f0f0f0;
 		margin-bottom: 10px;
-		position: relative;
+		clear: both;
 	}
 	.qna a {
 		display: block;
@@ -626,38 +620,33 @@
 		height: 110px;
 		transition: all 0.3s;
 	}
-	.qna .q1 {
-		width: 50px;
-		height: 50px;
-		position: absolute;
-		top: 30px;
-		left: 12px;
+	.qna div {
+		float: left;
 	}
-	.qna .q1 img {
-		width: 100%;
+	.qna_emo {
+		padding: 30px 15px;
 	}
-	.qna .q2 {
-		width: 186px;
-		height: 64px;
-		position: absolute;
-		top: 23px;
-		left: 72px;
+	.qna div span {
+		font-size: 40px;
+	}
+	.qna_txt h3,
+	.qna_txt p {
+		color: #333;
+	}
+	.qna_txt h3 {
+		padding: 20px 0 5px;
+		font-size: 18px;
+	}
+	.qna p {
+		font-size: 12px;
 	}
 	.qna a:hover {
 		background-color: #fff;
 	}
-	.qna a:hover span {
+	.qna a:hover span
+	.qna a:hover h3,
+	.qna a:hover p {
 		color: #000;
-	}
-	.qna .qnat {
-		font-size: 18px;
-		color: #333;
-	} 
-	.qna .qnac {
-		font-size: 11.5px;
-		color: #333;
-		display: block;
-		padding-top: 5px;
 	}
 	.service {
 		width: 250px;
@@ -671,6 +660,7 @@
 		float: left;
 		text-align: center;
 		padding-top: 10px;
+		box-sizing: border-box;
 		transition: all 0.3s;
 	}
 	.service a:first-child {
@@ -683,201 +673,178 @@
 	.service span {
 		font-size:15px;
 	}
-	.con7 {
+	.box2 {
 		width: 250px;
 		height: 240px;
 		float: left;
 		background-color: #fff;
 		margin: 20px 0 20px 46px;
 	}
-	.con7 h2 {
+	.box2 h3 {
 		padding: 10px 0 10px 15px;
-		font-weight: normal;
 		font-size: 16px;
 		border-bottom: 1px solid #ccc;
 		color: #333;
 	}
-	.con7 a {
+	.box2 a {
 		display: block;
 		float: left;
-		width: 70px;
-		margin: 12px 5px 0 5px;
+		width: 83px;
+		padding: 10px 0;
 		text-align: center;
 	}
-	.con7 .box {
-		width: 46px;
-		height: 46px;
-		background-color: #28a76e;
-		border-radius: 9px;
-		margin: 0 auto;
-		position: relative;
-		transition: all 0.3s;
-	}
-	.con7 span {
+	.box2 span {
 		font-size: 12px;
 		display: block;
 		line-height: 14px;
 		padding-top: 5px;
 	}
-	.con7 img {
+	.box2 img {
+		display: block;
+		padding: 7px;
+		background-color: #28a76e;
+		border-radius: 7px;
 		width: 32px;
 		height: 32px;
-		position: absolute;
-		top: 7px;
-		left: 7px;
+		margin: 0 auto;
+		transition: all 0.3s;
 	}
-	.con7 a:hover .box {
+	.box2 a:hover img {
 		background-color: #3bc287;
 	}
-	.con8 {
+
+	.box3 {
 		width: 250px;
 		height: 240px;
 		float: left;
 		background-color: #f0f0f0;
 		margin-left: 50px;
 	}
-	.con8 .box {
-		width: 250px;
-		height: 80px;
-		position: relative;
-	}
-	.con8 img {
-		position: absolute;
-		left: 10px;
-		top: 17px;
-		background-color: #ccc;
-		border-radius: 5px;
-		padding: 5px;
-	}
-	.con8 a {
+	.box3 a {
 		display: block;
 		width: 250px;
-		height: 79px;
+		height: 80px;
+		box-sizing: border-box;
 		border-bottom: 1px solid #ddd;
 		transition: all 0.3s;
 	}
-	.con8 a:last-child {
+	.box3 img {
+		display: block;
+		margin: 19px 10px;
+		background-color: #ccc;
+		border-radius: 5px;
+		padding: 5px;
+		float: left;
+	}
+	.box3 a:last-child {
 		border: 0;
 	}
-	.con8 a:hover {
+	.box3 a:hover {
 		background-color: #fff;
 		color: #000;
 	}
-	.con8 strong {
+	.bus {
+		float: left;
+	}
+	.box3 h3 {
 		font-size: 15px;
-		display: block;
-		position: absolute;
-		top: 12px;
-		left: 60px;
+		padding: 10px 10px 0;
 	}
-	.con8 span {
+	.box3 p {
 		font-size: 12px;
-		display: block;
-		position: absolute;
-		top: 35px;
-		left: 60px;
 	}
-	.con9 {
+	.box4 {
 		width: 250px;
 		height: 240px;
 		float: left;
 		margin-left: 46px;
 	}
-	.con9 .bx-wrapper {
+	.box4 .bx-wrapper {
 		margin-bottom: 0;
 	}
-	.con9 .bx-wrapper .bx-pager {
+	.box4 .bx-wrapper .bx-pager {
 		position: absolute;
 		top: -20px;
 		left: 0px;
 		width: 100%;
 	}
-	.con9 img {width: 100%;}
+	.box4 img {width: 100%;}
 
-	/* cont-box4 */
-	.con-box4 {
-		width: 1200px;
-		margin: 0 auto;
-		height: 100px;
+	/* con4 */
+	.con4 > div {
+		padding: 20px 0;
 	}
-	.con10 {
-		width: 1200px;
-		margin: 20px 0;
-	}
-	.con10 li a {
+	.con4 li a {
 		display: block;
 		border:1px solid #ccc;
 		width: 150px;
 		margin: 10px 0 10px 25px;
 	}
-	.con10 .bx-wrapper {
+	.con4 .bx-wrapper {
 	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
+	margin-bottom: 0;
 }
 	
 	/* footer */
-	#footer {
-		width: 100%;
+	footer {
 		margin: 0 auto;
 		background-color: #2a3744;
 		height: 120px;
 	} 
 	.footer-inner {
 		width: 1200px;
+		height: 120px;
 		margin: 0 auto;
-		position: relative;
 	}
 	.flogo {
-		position: absolute;
-		left: 0;
-		top: 30px;
+		float: left;
+		padding: 40px 20px 0;
 		width: 200px;
-		height: 40px;
 	}
 	.flogo img {
 		width: 200px;
 		height: 40px;
 	}
 	.fnav {
-		position: absolute;
-		left: 220px;
-		top: 15px;
+		float: left;
+		width: 700px;
+		padding: 10px 0;
 	}
 	.fnav li {
 		float: left;
-		margin-left: 15px;
 	}
 	.fnav li a {
 		color: #ccc;
-		font-size:16px;
+		padding: 0 7.5px;
+		font-size: 16px;
 		transition: all 0.3s;
 	}
 	.fnav li a:hover {
 		color: #fff;
 	 }
 	.address {
-		position: absolute;
-		left: 235px;
-		top: 50px;
+		width: 700px;
+		float: left;
 		font-size: 12px;
 		color: #ccc;
 	}
 	.address li {
-		margin-bottom: 3px;
+		padding: 0 0 3px 7.5px;
 	}
-	.family {
-		position: absolute;
-		right: 10px;
-		top: 20px;
+	.url {
+		display: inline-block;
+		padding: 24px 0 0 60px;
+		width: 200px;
 	}
-	.relate {
-		position: absolute;
-		right: 10px;
-		top: 60px;
+	.gourl {
+		margin-bottom: 10px;
 	}
 	.gourl, .gourl2 {
 		display: block;
+		width: 200px;
+		box-sizing: border-box;
 		padding: 7px;
 		background-color: #999;
 		color: #fff;
