@@ -86,6 +86,7 @@
 	}
 	.search {
 		width: 300px;
+		height: 38px;
 		line-height: 38px;
 		border: 1px solid #0059ab;
 		text-indent: 10px;
