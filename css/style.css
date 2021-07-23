@@ -17,7 +17,7 @@
 
 	/* gototop */
 	.gototop {position:fixed; right:20px; bottom:20px; border:1px solid #fff; display:block; width:40px; height:40px; border-radius:50%; text-align: center; line-height: 50px; background-color: #87b0dd; transform: translateY(30px); opacity: 0; transition: 0.5s; z-index: 9999;}
-  .gototop.active {opacity: 1; transform: translateY(0);}
+	.gototop.active {opacity: 1; transform: translateY(0);}
 	
 	.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #fff;

@@ -1,5 +1,5 @@
-	caption {display: none;}
 	#content {width: 1200px; height: 1450px; margin: 0 auto; position: relative;}
+	#content button {border: 1px solid #ccc;}
 	#content .con {position: absolute; left: 290px; top: 0;}
 	#content .con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
 	#content .con .join {width: 910px; height: 100px; margin-top: 20px; position: relative; border: 1px solid #ccc;}
