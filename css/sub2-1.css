@@ -1,17 +1,16 @@
-	 #content {width: 1200px; height: 2100px; margin: 0 auto; position: relative;}
-	 #content .con {position: absolute; left: 290px; top: 0;}
-	 #content .con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
-	 #content .con .do {width: 910px; height: 580px; margin-top: 20px;}
-	 #content .con .do img {width: 910px; height: 580px;  border: 1px solid #ccc; box-sizing: border-box}
-	 #content .con .talk {margin-top: 30px;border-bottom: 1px dashed #ccc;}
-	 #content .con .talk:last-child {border:none}
-	 #content .con .talk h3 {font-size: 20px; text-indent: 10px; background: url(../images/li.png) no-repeat 0 7px;}
-	 #content .con .talk .p1 {margin-top: 10px; font-size: 14px; line-height: 24px; margin-bottom: 30px;}
-	 #content .con .talk .p2 {float: right; font-size: 14px; margin-bottom: 10px;}
-	 #content .con .talk .tbl_basic {border-collapse:collapse;border-style:solid;border-width:0px 1px 1px 1px;border-color:#a7a7a7 #cecece #cecece #cecece; width:910px; text-align: center;}
-	 #content .con .talk .tbl_basic caption {display: none;}
-	 #content .con .talk .tbl_basic thead th {border-top:3px solid #28a76e; border-right: 1px solid #cecece; background-color: #f0f8f5;}
-	 #content .con .talk .tbl_basic th {text-align:center;padding:8px;color:#393939;font-weight:600}
-	 #content .con .talk .tbl_basic tbody th,.tbl_basic tfoot th {border-top:1px solid #cecece;}
-	 #content .con .talk .tbl_basic td {padding:10px 8px;border-top:1px solid #cecece;border-left:1px solid #cecece}
-	 #content .con .talk .tbl_basic tfoot th,.tbl_basic tfoot td {background-color:#f9f9f9}
+#content {height: 2100px;}
+.con {position: absolute; left: 290px; top: 0;}
+.con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
+.con .do {width: 910px; height: 580px; margin-top: 20px;}
+.con .do img {width: 910px; height: 580px;  border: 1px solid #ccc; box-sizing: border-box}
+.con .talk {margin-top: 30px;border-bottom: 1px dashed #ccc;}
+.con .talk:last-child {border:none}
+.con .talk h3 {font-size: 20px; text-indent: 10px; background: url(../images/li.png) no-repeat 0 7px;}
+.con .talk .p1 {margin-top: 10px; font-size: 14px; line-height: 24px; margin-bottom: 30px;}
+.con .talk .p2 {float: right; font-size: 14px; margin-bottom: 10px;}
+.con .talk .tbl_basic {border-collapse:collapse;border-style:solid;border-width:0px 1px 1px 1px;border-color:#a7a7a7 #cecece #cecece #cecece; width:910px; text-align: center;}
+.con .talk .tbl_basic thead th {border-top:3px solid #28a76e; border-right: 1px solid #cecece; background-color: #f0f8f5;}
+.con .talk .tbl_basic th {text-align:center;padding:8px;color:#393939;font-weight:600}
+.con .talk .tbl_basic tbody th,.tbl_basic tfoot th {border-top:1px solid #cecece;}
+.con .talk .tbl_basic td {padding:10px 8px;border-top:1px solid #cecece;border-left:1px solid #cecece}
+.con .talk .tbl_basic tfoot th,.tbl_basic tfoot td {background-color:#f9f9f9}

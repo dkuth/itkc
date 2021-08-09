@@ -1,7 +1,7 @@
-	 #content {width: 1200px; height: 1300px; margin: 0 auto; position: relative;}
-	 #content .con {position: absolute; left: 290px; top: 0;}
-	 #content .con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
-	 #content .con .hi {width: 910px; height: 580px; margin-top: 20px;}
-	 #content .con .hi img {width: 910px; height: 580px;}
-	 #content .con .talk {margin-top: 20px; line-height: 24px; font-size: 14px}
-	 #content .con .sign {position: absolute; right: 0;}
+#content {height: 1300px;}
+.con {position: absolute; left: 290px; top: 0;}
+.con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
+.con .hi {width: 910px; height: 580px; margin-top: 20px;}
+.con .hi img {width: 910px; height: 580px;}
+.con .talk {margin-top: 20px; line-height: 24px; font-size: 14px}
+.con .sign {position: absolute; right: 0;}

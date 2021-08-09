@@ -1,35 +1,32 @@
-	#content {width: 1200px; height: 900px; margin: 0 auto; position: relative;}
-	#content .con {position: absolute; left: 290px; top: 0;}
-	#content .con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
-	#content .con .sum {width: 570px; height: 50px; float: left; margin-top: 20px;}
-	#content .con .sum span:first-child {color: #28a76e; font-weight: bold;}
-	#content .con .sum span:last-child { font-weight: bold;}
+#content {height: 900px;}
+.con {position: absolute; left: 290px; top: 0;}
+.con h2 {width: 910px; height: 100px; line-height: 120px; font-size: 30px; border-bottom: 2px solid #000;}
+.con .sum {width: 570px; height: 50px; float: left; margin-top: 20px;}
+.con .sum span:first-child {color: #28a76e; font-weight: bold;}
+.con .sum span:last-child { font-weight: bold;}
 
-	#content .con .searchWrap {width: 330px;float: right; height: 50px; margin-top: 20px; float: left; padding: 5px;}
-	#content .con .searchWrap .selectBox, #content .con .searchWrap .searchBox {height: 40px; float: left; margin-right: 5px;}
+.con .searchWrap {width: 330px;float: right; height: 50px; margin-top: 20px; float: left; padding: 5px;}
+.con .searchWrap .selectBox, .con .searchWrap .searchBox {height: 40px; float: left; margin-right: 5px;}
 
-	#content .con .searchWrap .searchCondition, #content .con .searchWrap .searchKeyword {height: 35px; box-sizing:border-box; background-color: #f0f8f5;}
-	#content .con .searchWrap .searchKeyword {text-indent: 5px; border: 1px solid #ccc}
-	#content .con .searchWrap .searchBtn {width: 45px;height: 35px; border: none; line-height: 35px; background-color: #28a76e; color: #fff; cursor: pointer; font-weight: bold; font-size: 14px}
-	#content .con .tab3 {clear: both;width: 910px; height: 660px; margin-top: 20px} 
+.con .searchWrap .searchCondition, .con .searchWrap .searchKeyword {height: 35px; box-sizing:border-box; background-color: #f0f8f5;}
+.con .searchWrap .searchKeyword {text-indent: 5px; border: 1px solid #ccc}
+.con .searchWrap .searchBtn {width: 45px;height: 35px; border: none; line-height: 35px; background-color: #28a76e; color: #fff; cursor: pointer; font-weight: bold; font-size: 14px}
+.con .tab3 {clear: both;width: 910px; height: 660px; margin-top: 20px} 
 
-	/* tabmenu */
-	#content .con .tab3 .tabs {margin:0;padding:0}
-	#content .con .tab3 .tabs li {background-color: #eee;color:#333;display:inline-block; border-top-left-radius:10px;  border-top-right-radius:10px; padding:10px 15px; margin-right: 10px; cursor:pointer;font-weight:bold}
-      
-	#content .con .tab3 .tabs li.current {background:#28a76e;color:#fff; border-top-left-radius:10px; border-top-right-radius:10px;}
-
-	#content .con .tab3 .tab-content {display:none;width:910px; margin-top: 20px;}
-  #content .con .tab3 .tab-content:after {content:'';display:block;clear:both}
-	#content .con .tab3 .tab-content table {width: 910px; border-collapse: collapse}
-	#content .con .tab3 .tab-content table caption {display: none;}
-	#content .con .tab3 .tab-content table th {text-align: center; padding: 10px 0; background-color: #f0f8f5; border-top: 2px solid #28a76e; border-bottom: 2px solid #ccc;}
-	#content .con .tab3 .tab-content table td {text-align: center; padding: 10px 0; border-bottom: 1px solid #ccc;}
-	#content .con .tab3 .tab-content.current {display:block}
-
-	#content .con .page {width: 910px; height: auto;}
-	#content .con .page ul{text-align: center; margin-top: 20px;}
-  #content .con .page ul li{display: inline-block; }
-	#content .con .page ul li a {display: block; width: 30px;height: 30px;border: 1px solid #ccc; color: #333; text-align: center;line-height: 30px;}
-	#content .con .page ul li a.active {border:1px solid #28a76e; color: #28a76e;}
-	#content .con .page ul li a:hover {border:1px solid #28a76e; color: #28a76e;}
+/* tabmenu */
+.con .tab3 .tabs {margin:0;padding:0}
+.con .tab3 .tabs li {background-color: #eee;color:#333;display:inline-block; border-top-left-radius:10px;  border-top-right-radius:10px; padding:10px 15px; margin-right: 10px; cursor:pointer;font-weight:bold}
+.con .tab3 .tabs li.current {background:#28a76e;color:#fff; border-top-left-radius:10px; border-top-right-radius:10px;}
+.con .tab3 .tab-content {display:none;width:910px; margin-top: 20px;}
+.con .tab3 .tab-content:after {content:'';display:block;clear:both}
+.con .tab3 .tab-content table {width: 910px; border-collapse: collapse}
+.con .tab3 .tab-content table caption {display: none;}
+.con .tab3 .tab-content table th {text-align: center; padding: 10px 0; background-color: #f0f8f5; border-top: 2px solid #28a76e; border-bottom: 2px solid #ccc;}
+.con .tab3 .tab-content table td {text-align: center; padding: 10px 0; border-bottom: 1px solid #ccc;}
+.con .tab3 .tab-content.current {display:block}
+.con .page {width: 910px; height: auto;}
+.con .page ul{text-align: center; margin-top: 20px;}
+.con .page ul li{display: inline-block; }
+.con .page ul li a {display: block; width: 30px;height: 30px;border: 1px solid #ccc; color: #333; text-align: center;line-height: 30px;}
+.con .page ul li a.active {border:1px solid #28a76e; color: #28a76e;}
+.con .page ul li a:hover {border:1px solid #28a76e; color: #28a76e;}
